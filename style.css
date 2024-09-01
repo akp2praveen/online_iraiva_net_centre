@@ -1,0 +1,227 @@
+/* Resetting default browser styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    color: #333;
+}
+
+body::before {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('./Online Iraiva.png') no-repeat center center fixed;
+    background-size: 70%;
+    padding-top: 20%;
+    opacity: 0.5;
+    z-index: -1;
+    pointer-events: none;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    background: url('./background.jpg')  center ;
+    background-size: cover;
+    background-color: black;
+    color: #fff;
+    padding: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+#top_img {
+    margin-right: 20px;
+}
+
+header img {
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    transition: transform 0.3s ease;
+}
+
+header img:hover {
+    transform: scale(1.1);
+}
+
+.header-text {
+    flex: 1;
+}
+
+.header-text h1 {
+    margin: 0;
+    font-size: 2.5em;
+}
+
+.header-text h5 {
+    margin: 0;
+    font-size: 1.2em;
+}
+
+.container {
+    width: 80%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.services {
+    /*background: #fff;*/
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin-bottom: 20px;
+    transition: background-color 0.3s ease;
+}
+
+.services:hover {
+    background-color: #f9f9f9;
+    
+}
+
+.services h2 {
+    color: lightskyblue;
+    font-size: 1.8em;
+    border-bottom: 2px solid #00b4db;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+.services h2:hover {
+    color: brown;
+}
+
+.service-category {
+    margin-bottom: 20px;
+}
+
+.service-category h3 {
+    color: #0083b0;
+    font-size: 1.5em;
+    margin-bottom: 10px;
+    transition: color 0.3s ease;
+}
+
+.service-category h3:hover {
+    color: brown;
+}
+
+.service-category ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.service-category ul li {
+    padding: 5px 0;
+    border-bottom: 1px solid #ddd;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.service-category ul li:hover {
+    background-color: #e0f7fa;
+    color: #00796b;
+}
+
+#button_price{
+    border-radius: 8px;
+    margin-left: 50%;
+    text-align: center; 
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin-bottom: 20px;
+    transition: background-color 0.3s ease;
+
+    color: black;
+    opacity: 0.5;
+    z-index: -1;
+}
+#button_price:hover{
+    color: rgb(54, 119, 124);
+}
+.about-us {
+  /*  background: #fff;*/
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: justify;
+    margin-bottom: 20px;
+    transition: background-color 0.3s ease;
+}
+
+.about-us:hover {
+    background-color: #f9f9f9;
+}
+
+.about-us h2 {
+    color: #00b4db;
+    font-size: 1.8em;
+    border-bottom: 2px solid #00b4db;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+.about-us h2:hover {
+    color: brown;
+}
+
+.about-us p {
+    line-height: 1.6;
+    margin-bottom: 10px;
+}
+
+.contact {
+   /* background: #fff;*/
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    transition: background-color 0.3s ease;
+}
+
+.contact:hover {
+    background-color: #f9f9f9;
+}
+
+.contact h2 {
+    color: #00b4db;
+    font-size: 1.8em;
+    border-bottom: 2px solid #00b4db;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+.contact h2:hover {
+    color: brown;
+}
+
+.contact p {
+    margin-bottom: 10px;
+}
+
+.contact a {
+    color: #0083b0;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.contact a:hover {
+    color: #004d40;
+}
+
+footer {
+    background: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
+}
+
+footer p {
+    margin: 5px 0;
+}
